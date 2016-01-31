@@ -24,5 +24,5 @@ $(function(){
 //表示させる関数
   function showCondent(data){
     $('#container').append(data);
-  }
+  };
 });
