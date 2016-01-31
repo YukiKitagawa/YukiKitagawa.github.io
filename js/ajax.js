@@ -10,7 +10,7 @@ $(function(){
     }).done(function(data){
       //成功
       console.log(data);
-      // showCondent(data);
+      showCondent(data);
     }).fail(function(){
       //失敗
       console.log('ajax ERROR');
@@ -23,6 +23,12 @@ $(function(){
 
 //表示させる関数
   function showCondent(data){
-    $('#container').append(data);
+
+    // $('#container').append(data);
+
+    for(var cnt = 0; cnt < data.length; cnt++){
+      $('#container li').eq(cnt).text(data[cnt].name);
+    }
+
   }
 });
