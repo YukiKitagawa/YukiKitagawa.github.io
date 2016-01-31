@@ -8,8 +8,11 @@ $(function(){
       type:'GET',
       dataType:'html'
     }).done(function(data){
+      //成功
       console.log(data);
+      showCondent(data);
     }).fail(function(){
+      //失敗
       console.log('ajax ERROR');
     });
 
@@ -17,4 +20,9 @@ $(function(){
 
 
   });
+
+//表示させる関数
+  function showCondent(data){
+    $('#container').append(data);
+  }
 });
