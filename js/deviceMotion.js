@@ -11,6 +11,11 @@ $(function(){
     $('#device li').eq(0).text('加速度X: ' + x);
     $('#device li').eq(1).text('加速度Y: ' + y);
     $('#device li').eq(2).text('加速度Z: ' + z);
+
+
+    if(Math.abs(x) > 15 || Math.abs(y) > 15 || Math.abs(z) > 15){
+      $('#result').text('振ったよ');
+    }
   }
 
 });
