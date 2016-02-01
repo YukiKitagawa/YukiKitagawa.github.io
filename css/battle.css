@@ -1,0 +1,221 @@
+html{
+  min-height:  100%;
+  width: 100%;
+  height: 100%;
+  background: url(../img/battleBg.png) center top no-repeat;
+  background-size: cover;
+}
+#container{
+
+}
+
+#life{
+  overflow: hidden;
+  width: 1260px;
+  height: 210px;
+}
+#life1p{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-left: -650px;
+  width: 203px;
+  height: 110px;
+}
+
+#life1p li{
+  position: absolute;
+  width: 203px;
+  height: 110px;
+  margin: 60px 0 0 170px;
+}
+#p1Life0{
+  display: none;
+  position: absolute;
+  width: 203px;
+  height: 110px;
+  margin: 60px 0 0 170px;
+}
+
+#life2p{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-left: 450px;
+  position: absolute;;
+  width: 203px;
+  height: 110px;
+}
+
+#life2p li{
+  position: absolute;
+  width: 203px;
+  height: 110px;
+  margin: 60px 0 0 -170px;
+}
+#p2Life0{
+  display: none;
+  position: absolute;
+  width: 203px;
+  height: 110px;
+  margin: 60px 0 0 -170px;
+}
+
+#dmage{
+  overflow: hidden;
+}
+
+#dmage1p{
+  width: 100px;
+  float: left;
+  margin-left: 20px;
+}
+
+
+#dmage2p{
+  width: 100px;
+  float: right;
+  margin-right: 0;
+}
+
+#chara{
+  height: 360px;
+  overflow: hidden;
+}
+#p1{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-top: 260px;
+  margin-left: -600px;
+}
+#p2{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-top: 260px;
+  margin-left: 400px;
+}
+
+#skill{
+  overflow: hidden;
+}
+#skill1p{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-top: 340px;
+  margin-left: -550px;
+}
+#skill1p li{
+  display: none;
+  position: absolute;
+}
+
+#bakuhatu{
+  display: none;
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-top: 280px;
+  margin-left: -100px;
+}
+#skill2p{
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-top: 340px;
+  margin-left: 450px;
+}
+#skill2p li{
+  display: none;
+  position: absolute;
+}
+
+
+#attack{
+  clear: both;
+  width: 1260px;
+  overflow: hidden;
+}
+
+#attack1p li{
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: #CCC;
+  text-align: center;
+  margin: 10px;
+}
+#attack2p li{
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: #CCC;
+  text-align: center;
+  margin: 10px;
+}
+
+#btn{
+  /*width: 200px;
+  height: 75px;
+  border: solid 1px #000;
+  color: #CCC;
+  text-align: center;
+  line-height: 3.0;
+  font-size: 25px;
+  */
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-top: 645px;
+  margin-left: -100px;
+
+}
+#waza{
+  clear: both;
+  overflow: hidden;
+}
+#waza1p{
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-left: -575px;
+  margin-top: 680px;
+  color: #FFF;
+}
+
+#waza1p li{
+  display: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+#waza2p{
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  top:0px;
+  left: 50%;
+  margin-left: 180px;
+  margin-top: 680px;
+  color: #FFF;
+}
+
+#waza2p li{
+  display: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+.win{
+  font-size: 100px;
+  color: #F66;
+}
+.lose{
+  font-size: 100px;
+  color: #66F;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Battle</title>
+    <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/battleCreateJs.css">
+</head>
+<body>
+<div id="container">
+
+  <div id="life">
+    <ul id="life1p">
+      <li><img src="img/efect/heart0.png" alt=""></li>
+      <li><img src="img/efect/heart1.png" alt=""></li>
+      <li><img src="img/efect/heart2.png" alt=""></li>
+      <li><img src="img/efect/heart3.png" alt=""></li>
+      <li><img src="img/efect/heart4.png" alt=""></li>
+      <li><img src="img/efect/heart5.png" alt=""></li>
+      <li><img src="img/efect/heart6.png" alt=""></li>
+      <div id="p1Life0"><img src="img/efect/heart0.png" alt=""></div>
+    </ul>
+
+    <ul id="life2p">
+      <li><img src="img/efect/heart0.png" alt=""></li>
+      <li><img src="img/efect/heart1.png" alt=""></li>
+      <li><img src="img/efect/heart2.png" alt=""></li>
+      <li><img src="img/efect/heart3.png" alt=""></li>
+      <li><img src="img/efect/heart4.png" alt=""></li>
+      <li><img src="img/efect/heart5.png" alt=""></li>
+      <li><img src="img/efect/heart6.png" alt=""></li>
+      <div id="p2Life0"><img src="img/efect/heart0.png" alt=""></div>
+    </ul>
+  </div>
+
+  <!-- <div id="dmage">
+    <div id="dmage1p"><p>ダメージ</p></div>
+    <div id="dmage2p"><p>ダメージ</p></div>
+  </div> -->
+
+  <canvas id="canvas" width="1366" height="350"></canvas>
+
+  <div id="chara">
+    <div id="p1"><img src="img/chares/satan.png" alt=""></div>
+    <div id="p2"><img src="img/chares/atena2.png" alt=""></div>
+
+
+
+  </div>
+
+  <div id="attack">
+    <ul id=attack1p>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+
+    <ul id=attack2p>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+  </div>
+
+  <div id="btn"><img src="img/battleStart.png" alt=""></div>
+
+  <div id="waza">
+    <ul id="waza1p">
+      <li>パンチ</li>
+      <li>魔王のこぶし</li>
+      <li>火の粉</li>
+      <li>ファイアボール</li>
+      <li>魔王砲</li>
+      <li>ダークフォース</li>
+      <li>攻撃準備完了！！</li>
+      <li class="win">WIN！！</li>
+      <li class="lose">LOSE...</li>
+    </ul>
+
+    <ul id="waza2p">
+      <li>パンチ</li>
+      <li>破壊拳</li>
+      <li>武器ラッシュ</li>
+      <li>エクスカリバー</li>
+      <li>聖光弾</li>
+      <li>ライトフォース</li>
+      <li>攻撃準備完了！！</li>
+      <li class="win">WIN！！</li>
+      <li class="lose">LOSE...</li>
+    </ul>
+  </div>
+</div>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="https://code.createjs.com/createjs-2015.05.21.min.js"></script>
+<script src="js/jquery.jrumble.1.3.min.js"></script>
+<script src="js/battleCreateJs.js"></script>
+</body>
+</body>
+</html>
