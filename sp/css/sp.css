@@ -25,6 +25,7 @@ html{
   position: absolute;
   float: left;
   left: 50%;
-  margin-top: 1240px;
+  top: 80%;
+  /*margin-top: 1240px;*/
   margin-left: -400px;
 }
