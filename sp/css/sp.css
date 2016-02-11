@@ -1,8 +1,30 @@
-#bgImg img{
+html{
+  min-height:  100%;
   width: 100%;
-  height: 1650px;
+  height: 100%;
+  background: url(../img/spBg.png) center top no-repeat;
+  background-size: 100% 100%;
 }
 
-#dice ul li{
-  	text-decoration: underline;
+#dice{
+  	overflow: hidden;
+}
+
+#dice  li img{
+  width: 300px;
+  position: absolute;
+  float: left;
+  left: 50%;
+  margin-top: 700px;
+  margin-left: -150px;
+}
+
+
+#chara  li img{
+  width: 200px;
+  position: absolute;
+  float: left;
+  left: 50%;
+  margin-top: 1240px;
+  margin-left: -400px;
 }
