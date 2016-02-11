@@ -14,8 +14,8 @@ html{
   width: 300px;
   position: absolute;
   float: left;
-  left: 50%;
-  margin-top: 700px;
+  left: 50%;top: 40%;
+  /*margin-top: 700px;*/
   margin-left: -150px;
 }
 
