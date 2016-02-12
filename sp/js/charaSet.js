@@ -133,13 +133,15 @@ $(function(){
     window.addEventListener('devicemotion', shakeDevice);
 
     function shakeDevice(evt){
-      var x = evt.acceleration.x;
-      var y = evt.acceleration.y;
-      var z = evt.acceleration.z;
+      console.log('huru');
+      x = evt.acceleration.x;
+      y = evt.acceleration.y;
+      z = evt.acceleration.z;
     }
 
     if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
       $('#dice li').eq(rand).show();
+      $('#name li').text('加速度X: ' + x);
     }
 
 
