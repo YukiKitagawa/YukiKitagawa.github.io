@@ -30,7 +30,7 @@ $(function(){
     var y = evt.acceleration.y;
     var z = evt.acceleration.z;
 
-    $('#player li').eq(0).text('加速度X: ' + x);
+    $('#speed p').text('加速度X: ' + x);
 
 
 
