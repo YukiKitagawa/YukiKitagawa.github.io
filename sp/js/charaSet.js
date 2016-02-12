@@ -23,22 +23,7 @@ $(function(){
     $('#player li:last').fadeIn();
   };
 
-  window.addEventListener('devicemotion', shakeDevice);
 
-  function shakeDevice(evt){
-    x = evt.acceleration.x;
-    y = evt.acceleration.y;
-    z = evt.acceleration.z;
-
-    $('#speed p').text('加速度X: ' + x);
-
-
-
-    if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
-      $('#speed p').text('振ったよ');
-      $('#dice li').eq(rand).show();
-    }
-  }
 
 
 
@@ -143,18 +128,26 @@ $(function(){
     $('#rool').hide();
     rand = Math.floor( Math.random() * 6 ) ;
     console.log(rand);
+  });
+
+  window.addEventListener('devicemotion', shakeDevice);
+
+  function shakeDevice(evt){
+    x = evt.acceleration.x;
+    y = evt.acceleration.y;
+    z = evt.acceleration.z;
+
+    $('#speed p').text('加速度X: ' + x);
+
+
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
-
-      $('#speed p').text('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-
+      $('#speed p').text('振ったよ');
+      $('#dice li').eq(rand).show();
     }
+  }
 
 
-    rand = 0;
-
-
-  });
 
 $('#chara').on('click',function(){
     $('#rool').show();
