@@ -19,6 +19,16 @@ $(function(){
   };
 
 
+  //----------------------------------------------------------------
+  //加速度イベント
+  window.addEventListener('devicemotion', shakeDevice);
+
+  function shakeDevice(){
+    var x = evt.acceleration.x;
+    var y = evt.acceleration.y;
+    var z = evt.acceleration.z;
+  }
+
 
 
 
@@ -115,32 +125,16 @@ $(function(){
   //サイコロ画面
 
 
-  //加速度のイベント
-  window.addEventListener('devicemotion', shakeDevice);
-
-  function shakeDevice(evt){
-    var x = evt.acceleration.x;
-    var y = evt.acceleration.y;
-    var z = evt.acceleration.z;
-
-    $('#device li').eq(0).text('加速度X: ' + x);
-    $('#device li').eq(1).text('加速度Y: ' + y);
-    $('#device li').eq(2).text('加速度Z: ' + z);
-
-
-    if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
-      $('#dice li').eq(rand).show();
-    }
-
-
-
-
-
 
   $('#rool').on('click',function(){
     $('#rool').hide();
     rand = Math.floor( Math.random() * 6 ) ;
     console.log(rand);
+
+    if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
+      $('#dice li').eq(rand).show();
+    }
+
 
     rand = 0;
 
