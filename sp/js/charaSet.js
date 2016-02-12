@@ -36,6 +36,7 @@ $(function(){
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
       $('#speed p').text('振ったよ');
+      $('#dice li').eq(rand).fadeIn(2000);
     }
   }
 
@@ -146,7 +147,7 @@ $(function(){
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
 
       $('#speed p').text('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-      $('#dice li').eq(rand).fadeIn(2000);
+
     }
 
 
