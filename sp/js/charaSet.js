@@ -137,12 +137,12 @@ $(function(){
     y = evt.acceleration.y;
     z = evt.acceleration.z;
 
-    $('#speed p').text('加速度X: ' + x);
+    // $('#speed p').text('加速度X: ' + x);
 
 
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
-      $('#speed p').text('振ったよ');
+      // $('#speed p').text('振ったよ');
       $('#dice li').eq(rand).show();
     }
   }
