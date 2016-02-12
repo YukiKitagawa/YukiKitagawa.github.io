@@ -35,7 +35,7 @@ $(function(){
 
 
     if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
-      $('#result').text('振ったよ');
+      $('#speed p').text('振ったよ');
     }
   }
 
