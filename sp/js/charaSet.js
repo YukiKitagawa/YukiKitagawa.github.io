@@ -139,9 +139,11 @@ $(function(){
       z = evt.acceleration.z;
     }
 
+    $('#name li').text('加速度X: ' + x);
+
     if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
       $('#dice li').eq(rand).show();
-      $('#name li').text('加速度X: ' + x);
+
     }
 
 
