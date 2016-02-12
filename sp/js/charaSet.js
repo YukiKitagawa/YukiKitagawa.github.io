@@ -24,15 +24,7 @@ $(function(){
   };
 
 
-  //----------------------------------------------------------------
-  //加速度イベント
-  window.addEventListener('devicemotion', shakeDevice);
 
-  function shakeDevice(evt){
-    var x = evt.acceleration.x;
-    var y = evt.acceleration.y;
-    var z = evt.acceleration.z;
-  }
 
 
 
@@ -135,6 +127,16 @@ $(function(){
     $('#rool').hide();
     rand = Math.floor( Math.random() * 6 ) ;
     console.log(rand);
+
+    //----------------------------------------------------------------
+    //加速度イベント
+    window.addEventListener('devicemotion', shakeDevice);
+
+    function shakeDevice(evt){
+      var x = evt.acceleration.x;
+      var y = evt.acceleration.y;
+      var z = evt.acceleration.z;
+    }
 
     if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
       $('#dice li').eq(rand).show();
