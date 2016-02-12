@@ -34,7 +34,7 @@ $(function(){
 
 
 
-    if(Math.abs(x) > 3 || Math.abs(y) > 3 || Math.abs(z) > 3){
+    if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
       $('#speed p').text('振ったよ');
     }
   }
