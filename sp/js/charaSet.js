@@ -144,6 +144,8 @@ $(function(){
     console.log(rand);
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
+
+      $('#speed p').text('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
       $('#dice li').eq(rand).fadeIn(2000);
     }
 
