@@ -143,22 +143,8 @@ $(function(){
     rand = Math.floor( Math.random() * 6 ) ;
     console.log(rand);
 
-    //----------------------------------------------------------------
-    //加速度イベント
-    window.addEventListener('devicemotion', shakeDevice);
-
-    function shakeDevice(evt){
-      console.log('huru');
-      var x = evt.acceleration.x;
-      var y = evt.acceleration.y;
-      var z = evt.acceleration.z;
-    }
-
-    $('#name li').text('加速度X: ' + x);
-
-    if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
-      $('#dice li').eq(rand).show();
-
+    if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
+      $('#dice li').eq(rand).fadeIn(2000);
     }
 
 
