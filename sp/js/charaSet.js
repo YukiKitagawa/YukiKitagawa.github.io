@@ -6,9 +6,9 @@ $(function(){
   var life = 6;
   var rand = 0;
 
-  var x = 0;
-  var y = 0;
-  var z = 0;
+  // var x = 0;
+  // var y = 0;
+  // var z = 0;
 
 
 
@@ -134,9 +134,9 @@ $(function(){
 
     function shakeDevice(evt){
       console.log('huru');
-      x = evt.acceleration.x;
-      y = evt.acceleration.y;
-      z = evt.acceleration.z;
+      var x = evt.acceleration.x;
+      var y = evt.acceleration.y;
+      var z = evt.acceleration.z;
     }
 
     $('#name li').text('加速度X: ' + x);
