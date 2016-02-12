@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <title>サイコロッセオsp</title>
   <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/sp.css">
+  <link rel="stylesheet" href="css/sp.css">
 </head>
 <body>
   <div id="container">
   <!-- <div id="bgImg"><img src="img/spBg.png" alt=""></div> -->
-
 
   <ul id="player">
     <li><img src="img/P1.png" alt=""></li>
@@ -17,50 +16,82 @@
   </ul>
 
 
-    <ul id="dice">
-      <li><img src="img/sai1.png" alt=""></li>
-      <li><img src="img/sai2.png" alt=""></li>
-      <li><img src="img/sai3.png" alt=""></li>
-      <li><img src="img/sai4.png" alt=""></li>
-      <li><img src="img/sai5.png" alt=""></li>
-      <li><img src="img/sai6.png" alt=""></li>
+
+  <div id="charaSelect">
+    <ul id="charaSet">
+      <li><img src="img/chara/atena.png" alt=""></li>
+      <li><img src="img/chara/amate.png" alt=""></li>
+      <li><img src="img/chara/zeus.png" alt=""></li>
+      <li><img src="img/chara/satan.png" alt=""></li>
+      <li><img src="img/chara/kary.png" alt=""></li>
+      <li><img src="img/chara/odin.png" alt=""></li>
     </ul>
 
-  <ul id="chara">
-    <li><img src="img/chara/atena.png" alt=""></li>
-    <li><img src="img/chara/amate.png" alt=""></li>
-    <li><img src="img/chara/zeus.png" alt=""></li>
-    <li><img src="img/chara/satan.png" alt=""></li>
-    <li><img src="img/chara/kary.png" alt=""></li>
-    <li><img src="img/chara/odin.png" alt=""></li>
-  </ul>
+    <div id="right"><img src="img/charaSet/right.png" alt=""></div>
+    <div id="left"><img src="img/charaSet/left.png" alt=""></div>
 
+    <ul id="charaName">
+      <li><img src="img/charaSet/nAtana.png" alt=""></li>
+      <li><img src="img/charaSet/nAmate.png" alt=""></li>
+      <li><img src="img/charaSet/nZeus.png" alt=""></li>
+      <li><img src="img/charaSet/nSatan.png" alt=""></li>
+      <li><img src="img/charaSet/nKary.png" alt=""></li>
+      <li><img src="img/charaSet/nOdin.png" alt=""></li>
+    </ul>
 
-  <ul id="name">
-    <li><p>アテナ</p></li>
-    <li><p>アマテラス</p></li>
-    <li><p>ゼウス</p></li>
-    <li><p>サタン</p></li>
-    <li><p>カーリー</p></li>
-    <li><p>オーディン</p></li>
-  </ul>
-
-  <ul id="heart">
-    <li><img src="img/efect/heart0.png" alt=""></li>
-    <li><img src="img/efect/heart1.png" alt=""></li>
-    <li><img src="img/efect/heart2.png" alt=""></li>
-    <li><img src="img/efect/heart3.png" alt=""></li>
-    <li><img src="img/efect/heart4.png" alt=""></li>
-    <li><img src="img/efect/heart5.png" alt=""></li>
-    <li><img src="img/efect/heart6.png" alt=""></li>
-  </ul>
-
-  <div id="rool"><img src="img/roolSai.png" alt=""></div>
+    <div id="select"><img src="img/charaSet/select.png" alt="" /></div>
+  </div>
 
 
 
 
 
+  <div id="battle">
+      <ul id="dice">
+        <li><img src="img/sai1.png" alt=""></li>
+        <li><img src="img/sai2.png" alt=""></li>
+        <li><img src="img/sai3.png" alt=""></li>
+        <li><img src="img/sai4.png" alt=""></li>
+        <li><img src="img/sai5.png" alt=""></li>
+        <li><img src="img/sai6.png" alt=""></li>
+      </ul>
+
+    <ul id="chara">
+      <li><img src="img/chara/atena.png" alt=""></li>
+      <li><img src="img/chara/amate.png" alt=""></li>
+      <li><img src="img/chara/zeus.png" alt=""></li>
+      <li><img src="img/chara/satan.png" alt=""></li>
+      <li><img src="img/chara/kary.png" alt=""></li>
+      <li><img src="img/chara/odin.png" alt=""></li>
+    </ul>
+
+
+    <ul id="name">
+      <li><img src="img/charaSet/nAtana.png" alt=""></li>
+      <li><img src="img/charaSet/nAmate.png" alt=""></li>
+      <li><img src="img/charaSet/nZeus.png" alt=""></li>
+      <li><img src="img/charaSet/nSatan.png" alt=""></li>
+      <li><img src="img/charaSet/nKary.png" alt=""></li>
+      <li><img src="img/charaSet/nOdin.png" alt=""></li>
+    </ul>
+
+    <ul id="heart">
+      <li><img src="img/efect/heart0.png" alt=""></li>
+      <li><img src="img/efect/heart1.png" alt=""></li>
+      <li><img src="img/efect/heart2.png" alt=""></li>
+      <li><img src="img/efect/heart3.png" alt=""></li>
+      <li><img src="img/efect/heart4.png" alt=""></li>
+      <li><img src="img/efect/heart5.png" alt=""></li>
+      <li><img src="img/efect/heart6.png" alt=""></li>
+    </ul>
+
+    <div id="rool"><img src="img/roolSai.png" alt=""></div>
+  </div>
+
+
+
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/charaSet.js"></script>
   </div>
 </body>
 </html>
