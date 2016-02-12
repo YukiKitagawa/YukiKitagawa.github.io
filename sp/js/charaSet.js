@@ -6,6 +6,11 @@ $(function(){
   var life = 6;
   var rand = 0;
 
+  var x = 0;
+  var y = 0;
+  var z = 0;
+
+
 
   $('#battle').hide();
   $('#player li').hide();
@@ -23,7 +28,7 @@ $(function(){
   //加速度イベント
   window.addEventListener('devicemotion', shakeDevice);
 
-  function shakeDevice(){
+  function shakeDevice(evt){
     var x = evt.acceleration.x;
     var y = evt.acceleration.y;
     var z = evt.acceleration.z;
