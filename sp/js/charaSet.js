@@ -23,6 +23,21 @@ $(function(){
     $('#player li:last').fadeIn();
   };
 
+  window.addEventListener('devicemotion', shakeDevice);
+
+  function shakeDevice(evt){
+    var x = evt.acceleration.x;
+    var y = evt.acceleration.y;
+    var z = evt.acceleration.z;
+
+    $('#player li').eq(0).text('加速度X: ' + x);
+
+
+
+    if(Math.abs(x) > 5 || Math.abs(y) > 5 || Math.abs(z) > 5){
+      $('#result').text('振ったよ');
+    }
+  }
 
 
 
