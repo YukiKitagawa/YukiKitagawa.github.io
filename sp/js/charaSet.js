@@ -126,6 +126,7 @@ $(function(){
 
   $('#rool').on('click',function(){
     $('#rool').hide();
+    $('#dice li').hide();
     rand = Math.floor( Math.random() * 6 ) ;
     console.log(rand);
   });
