@@ -73,11 +73,11 @@ html{
 
 
 #chara  li img{
-  width: 300px;
+  width: 280px;
   position: absolute;
   float: left;
   left: 50%;
-  top: 73%;
+  top: 68%;
   /*margin-top: 1240px;*/
   margin-left: -380px;
 }
