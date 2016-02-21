@@ -70,6 +70,10 @@ html{
   margin-left: -150px;
 }
 
+#canvas{
+  margin-top: 600px;
+}
+
 
 #chara  li img{
   width: 280px;

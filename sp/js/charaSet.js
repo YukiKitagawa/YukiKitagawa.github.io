@@ -30,6 +30,8 @@ $(function(){
 
 
 
+
+
 //----------------------------------------------------------------
 //キャラ選択画面
   $('#charaSet li').hide();
@@ -121,6 +123,34 @@ $(function(){
 
   //----------------------------------------------------------------
   //サイコロ画面
+  $('#rool').on('click',function(){
+    console.log('aaaa');
+    //ステージ
+    var stageEL = document.querySelector('#canvas');
+    var stage = new createjs.Stage(stageEL);
+
+
+    //フレーム
+    createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
+    createjs.Ticker.setFPS(30);
+    createjs.Ticker.addEventListener('tick', function(){
+      stage.update();
+    });
+
+    var spriteData = {
+      images: ['img/saikoro.png'],
+      frames: {width: 870, height: 872}
+    };
+    var spriteSheet = new createjs.SpriteSheet(spriteData);
+    var misodaSprite = new createjs.Sprite(spriteSheet, 0);
+    misodaSprite.set({x: 280, y: 0});
+    misodaSprite.set({scaleX: 0.5, scaleY: 0.5});
+    stage.addChild(misodaSprite);
+
+
+
+
+  });
 
 
 
@@ -144,6 +174,7 @@ $(function(){
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
       // $('#speed p').text('振ったよ');
+
       $('#dice li').eq(rand).fadeIn();
     }
   }
