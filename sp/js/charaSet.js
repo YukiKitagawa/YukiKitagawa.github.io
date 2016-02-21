@@ -188,6 +188,11 @@ $(function(){
     }
   }
 
+  $('#canvas').on('click',function(){
+    $('#dice li').eq(rand).fadeIn();
+    $('#canvas').hide();
+  });
+
 
 
 $('#chara').on('click',function(){
