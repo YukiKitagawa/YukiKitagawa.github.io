@@ -177,14 +177,14 @@ $(function(){
         roolSprite.set({x: 280, y: 0});
         roolSprite.set({scaleX: 0.5, scaleY: 0.5});
         stage.addChild(roolSprite);
-      
+
       //------------------------------------------------
 
 
 
 
 
-      $('#dice li').eq(rand).fadeIn();
+      // $('#dice li').eq(rand).fadeIn();
     }
   }
 
