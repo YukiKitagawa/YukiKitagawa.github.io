@@ -135,7 +135,7 @@ $(function(){
     $('#rool').hide();
     $('#dice li').hide();
 
-    $('#dice li').eq(0).show();
+    $('#dice li').eq(6).show();
     rand = Math.floor( Math.random() * 6 ) ;
     console.log(rand);
   });
@@ -153,7 +153,7 @@ $(function(){
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
       // $('#speed p').text('振ったよ');
-      $('#dice li').eq(0).hide();
+      $('#dice li').eq(6).hide();
       $('#canvas').show();
 
 
