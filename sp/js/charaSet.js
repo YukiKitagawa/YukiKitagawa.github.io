@@ -198,7 +198,7 @@ $(function(){
   });
 
 
-
+//PC側から値が帰ってきたら発動
 $('#chara').on('click',function(){
 
     $('#rool').show();
