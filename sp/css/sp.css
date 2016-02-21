@@ -107,10 +107,10 @@ html{
 }
 
 #rool img{
-  width: 300px;
+  width: 500px;
   position: absolute;
   float: left;
   left: 50%;
-  top: 40%;
-  margin-left: -150px;
+  top: 34%;
+  margin-left: -250px;
 }
