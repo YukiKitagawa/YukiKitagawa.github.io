@@ -125,7 +125,7 @@ $(function(){
   //サイコロ画面
   $('#rool').on('click',function(){
 
-    $('#canvas').show();
+
     console.log('aaaa');
     //ステージ
     var stageEL = document.querySelector('#canvas');
@@ -180,6 +180,7 @@ $(function(){
 
 
 $('#chara').on('click',function(){
+    $('#canvas').show();
     $('#rool').show();
     $('#dice li').hide();
 });
