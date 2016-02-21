@@ -25,6 +25,17 @@ $(function(){
 
 
 
+  var stageEL = document.querySelector('#canvas');
+  var stage = new createjs.Stage(stageEL);
+
+
+  //フレーム
+  createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
+  createjs.Ticker.setFPS(30);
+  createjs.Ticker.addEventListener('tick', function(){
+    stage.update();
+  });
+
 
 
 
@@ -154,22 +165,14 @@ $(function(){
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
       // $('#speed p').text('振ったよ');
       $('#dice li').eq(0).hide();
+      $('#canvas').show();
 
 
 
       //------------------------------------------------
       //ステージ
 
-        var stageEL = document.querySelector('#canvas');
-        var stage = new createjs.Stage(stageEL);
 
-
-        //フレーム
-        createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
-        createjs.Ticker.setFPS(30);
-        createjs.Ticker.addEventListener('tick', function(){
-          stage.update();
-        });
 
         var spriteData = {
           images: ['img/saikoro.png'],
@@ -199,7 +202,7 @@ $(function(){
 
 
 $('#chara').on('click',function(){
-    $('#canvas').show();
+
     $('#rool').show();
     $('#dice li').hide();
 });
