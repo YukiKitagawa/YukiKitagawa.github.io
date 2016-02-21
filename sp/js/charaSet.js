@@ -193,7 +193,7 @@ $(function(){
   }
 
   $('#canvas').on('click',function(){
-    $('#canvas').fadeOut();
+    $('#canvas').hide();
     $('#dice li').eq(rand).fadeIn();
 
   });
