@@ -167,7 +167,7 @@ $(function(){
 
         //フレーム
         createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
-        createjs.Ticker.setFPS(30);
+        createjs.Ticker.setFPS(15);
         createjs.Ticker.addEventListener('tick', function(){
           stage.update();
         });
@@ -195,6 +195,7 @@ $(function(){
   $('#canvas').on('click',function(){
     $('#canvas').hide();
     $('#dice li').eq(rand).fadeIn();
+    //ここで出目情報を飛ばす
 
   });
 
