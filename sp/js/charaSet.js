@@ -6,6 +6,8 @@ $(function(){
   var life = 6;
   var rand = 0;
 
+  console.log(life);
+
   var x = 0;
   var y = 0;
   var z = 0;
@@ -125,12 +127,7 @@ $(function(){
   //サイコロ画面
   $('#rool').on('click',function(){
 
-
     console.log('aaaa');
-
-
-
-
 
     $('#rool').hide();
     $('#dice li').hide();
@@ -183,7 +180,11 @@ $(function(){
         stage.addChild(roolSprite);
 
       //------------------------------------------------
-
+      setTimeout(function(){
+        $('#canvas').hide();
+        $('#dice li').eq(rand).fadeIn();
+        //ここで出目情報を飛ばす
+      }, 3000);
 
 
 
@@ -192,12 +193,11 @@ $(function(){
     }
   }
 
-  $('#canvas').on('click',function(){
-    $('#canvas').hide();
-    $('#dice li').eq(rand).fadeIn();
-    //ここで出目情報を飛ばす
-
-  });
+  // $('#canvas').on('click',function(){
+  //   $('#canvas').hide();
+  //   $('#dice li').eq(rand).fadeIn();
+  //   //ここで出目情報を飛ばす
+  // });
 
 
 //PC側から値が帰ってきたら発動
