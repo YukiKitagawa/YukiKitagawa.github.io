@@ -150,8 +150,6 @@ $(function(){
 
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
-      $('#dice li').eq(6).hide();
-      $('#canvas').show();
 
       //------------------------------------------------
       //createjs
@@ -180,7 +178,8 @@ $(function(){
 
       //------------------------------------------------
 
-      setTimeout(function(){
+      $('#dice li').eq(6).hide();
+      $('#canvas').show().setTimeout(function(){
         $('#canvas').hide();
         $('#dice li').eq(rand).show();
 
