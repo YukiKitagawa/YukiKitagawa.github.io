@@ -179,7 +179,9 @@ $(function(){
       //------------------------------------------------
 
       $('#dice li').eq(6).hide();
-      $('#canvas').show().setTimeout(function(){
+      $('#canvas').show();
+
+      setTimeout(function(){
         $('#canvas').hide();
         $('#dice li').eq(rand).show();
 
