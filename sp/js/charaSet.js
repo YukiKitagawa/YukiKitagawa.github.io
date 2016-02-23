@@ -6,8 +6,9 @@ $(function(){
   var player = 0;
   var life = 6;
   var rand = 0;
+  var getDmage = 0;
 
-  console.log(life);
+
 
   var x = 0;
   var y = 0;
@@ -58,8 +59,8 @@ $(function(){
 
 
   $('#right').on('click',function(){
-     console.log(count);
      count++;
+     console.log('キャラ' + count);
      if(count > 5){
        count = 0;
      }
@@ -72,8 +73,8 @@ $(function(){
 
 
    $('#left').on('click',function(){
-      console.log(count);
       count--;
+      console.log('キャラ' + count);
       if(count < 0){
         count = 5;
       }
@@ -117,7 +118,7 @@ $(function(){
       $('#dice li').hide();
       $('#heart li').eq(life).appendTo('#heart').fadeIn();
 
-      console.log(count);
+      console.log('キャラ' + count);
 
   });
 
@@ -152,8 +153,6 @@ $(function(){
       $('#dice li').eq(6).hide();
       $('#canvas').show();
 
-
-
       //------------------------------------------------
       //createjs
 
@@ -161,7 +160,6 @@ $(function(){
 
         var stageEL = document.querySelector('#canvas');
         var stage = new createjs.Stage(stageEL);
-
 
         //フレーム
         createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
@@ -182,34 +180,46 @@ $(function(){
 
       //------------------------------------------------
 
-
-
-
       setTimeout(function(){
         $('#canvas').hide();
         $('#dice li').eq(rand).show();
+
         //ここで出目情報を飛ばす
-      }, 4000);
 
+      }, 3000);
 
-
-
-      // $('#dice li').eq(rand).fadeIn();
     }
   }
 
   // $('#canvas').on('click',function(){
   //   $('#canvas').hide();
   //   $('#dice li').eq(rand).fadeIn();
-  //   //ここで出目情報を飛ばす
+  //ここで出目情報を飛ばす
   // });
 
+  //---------------------------------------------------------
+  //PC側から値が帰ってきたら発動
+  $('#chara').on('click',function(){
+      life = life - getDmage;
 
-//PC側から値が帰ってきたら発動
-$('#chara').on('click',function(){
+      if(life > -1){
+        $('#heart li').hide();
+        $('#heart li').eq(life).appendTo('#heart').fadeIn();
+      }
+      if(life == -1 ||life < -1){
+        life = 0;
+        $('#heart li').hide();
+        $('#heart li').eq(0).show();
+      }
+      console.log(life);
 
-    $('#rool').show();
-    $('#dice li').hide();
+
+      $('#rool').show();
+      $('#dice li').hide();
+
+  //-----------------------------------------------------------
+
+
 });
 
 
