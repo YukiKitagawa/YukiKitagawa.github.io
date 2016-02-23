@@ -145,18 +145,18 @@ $(function(){
     y = evt.acceleration.y;
     z = evt.acceleration.z;
 
-    // $('#speed p').text('加速度X: ' + x);
 
 
 
     if(Math.abs(x) > 10 || Math.abs(y) > 10 || Math.abs(z) > 10){
-      // $('#speed p').text('振ったよ');
       $('#dice li').eq(6).hide();
       $('#canvas').show();
 
 
 
       //------------------------------------------------
+      //createjs
+
       //ステージ
 
         var stageEL = document.querySelector('#canvas');
@@ -181,11 +181,15 @@ $(function(){
         stage.addChild(roolSprite);
 
       //------------------------------------------------
+
+
+
+
       setTimeout(function(){
         $('#canvas').hide();
         $('#dice li').eq(rand).show();
         //ここで出目情報を飛ばす
-      }, 5000);
+      }, 4000);
 
 
 
