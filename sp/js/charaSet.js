@@ -183,7 +183,7 @@ $(function(){
       //------------------------------------------------
       setTimeout(function(){
         $('#canvas').hide();
-        $('#dice li').eq(rand).fadeIn();
+        $('#dice li').eq(rand).show();
         //ここで出目情報を飛ばす
       }, 5000);
 
