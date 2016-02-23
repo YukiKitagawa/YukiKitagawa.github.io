@@ -1,6 +1,7 @@
 $(function(){
   console.log('DOMが呼ばれたよ');
 
+
   var count = 0;
   var player = 0;
   var life = 6;
@@ -184,7 +185,7 @@ $(function(){
         $('#canvas').hide();
         $('#dice li').eq(rand).fadeIn();
         //ここで出目情報を飛ばす
-      }, 3000);
+      }, 5000);
 
 
 
